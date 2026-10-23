@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRI University - Computer Science Admissions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        } 
+
+        .college-title h1 {
+            margin: 0;
+            font-size: 26px;
+            color: #ffffff;
+        }
+
+        .college-title p {
+            margin: 0;
+            font-size: 14px;
+            color: #ffcc00;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        .course-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .course-list li {
+            background-color: #eef4f8;
+            margin: 8px 0;
+            padding: 12px 15px;
+            border-left: 5px solid #003366;
+            border-radius: 3px;
+        }
+
+        .course-list li strong {
+            color: #003366;
+        }
+
+        /* 3. Fee Structure Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #dddddd;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px 12px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        form {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #003366;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ffcc00;
+            color: #003366;
+        }
+
+        /* 5. Footer Tag */
+        footer {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div><img src="c:\Users\shaik\OneDrive\Pictures\Screenshots\NRI LOGO.png"></div>
+            <div class="college-title">
+                <h1>NRI University</h1>
+                <p>Computer Science & Technology</p>
+            </div>
+        </div>
+        <nav>
+            <a href="#courses">Courses</a>
+            <a href="#fees">Fee Structure</a>
+            <a href="#register">Apply Now</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="courses">
+            <h2>Computer Science Courses</h2>
+            <ul class="course-list">
+                <li><strong>B.Tech in Computer Science & Engineering (CSE)</strong> - 4 Years Full-time</li>
+                <li><strong>B.Tech in Artificial Intelligence & Machine Learning</strong> - 4 Years Full-time</li>
+                <li><strong>B.Tech in Data Science & Big Analytics</strong> - 4 Years Full-time</li>
+                <li><strong>B.Tech in Cyber Security & Forensic Science</strong> - 4 Years Full-time</li>
+                <li><strong>B.Tech Data Science</strong></li>
+            </ul>
+        </section>
+        <section id="fees">
+            <h2>Course Fee Structure</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Tuition Fee (Per Year)</th>
+                        <th>Admission Fee (One Time)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech Computer Science & Engineering</td>
+                        <td>4 Years</td>
+                        <td>Rs.120000</td>
+                        <td>Rs.10000Rs</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech AI & Machine Learning</td>
+                        <td>4 Years</td>
+                        <td>Rs.140000</td>
+                        <td>Rs.10000</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech Cyber Security</td>
+                        <td>4 Years</td>
+                        <td>Rs.100000</td>
+                        <td>Rs.10000</td>
+                    </tr>
+                    <tr>
+                        <td>B.tech Data Science</td>
+                        <td>3 Years</td>
+                        <td>Rs.130000</td>
+                        <td>Rs.10000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="register">
+            <h2>Application Form</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Select Preferred Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select Course --</option>
+                        <option value="btech-cse">B.Tech - Computer Science & Engineering</option>
+                        <option value="btech-aiml">B.Tech - AI & Machine Learning</option>
+                        <option value="btech-cyber">B.Tech - Cyber Security</option>
+                        <option value="bca">B.Tech Data Science</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 NRI University. All Rights Reserved.</p>
+        <p>Department of Computer Science & Engineering | Contact: <a href="mailto:admissions@nriuniversity.edu">admissions@nriuniversity.edu</a> | Phone: 1111111111</p>
+    </footer>
+
+</body>
+</html>

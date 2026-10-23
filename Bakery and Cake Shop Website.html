@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Bakes - Bakery & Cake Shop</title>
+    <style>
+        body{
+            font-family:Arial, sans-serif;
+            margin:0;
+            padding:0;
+            background-color: #fdfaf6;
+            color: #4a3b32;
+        }
+        header{
+            background-color: #6b4226;
+            color: #ffffff;
+            padding: 20px 40px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+
+        .brand-title h1 {
+            margin:0;
+            font-size:28px;
+            color: #ffffff;
+        }
+
+        .brand-title p {
+            margin:0;
+            font-size:14px;
+            color: #f3c26b;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration:none;
+            margin-left:20px;
+            font-weight:bold;
+        }
+        .container {
+            width:85%;
+            margin:30px auto;
+            background: #ffffff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #6b4226;
+            border-bottom: 2px solid #f3c26b;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        .address-box {
+            background-color: #fff8f0;
+            border: 1px solid #f3c26b;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .address-box p {
+            margin: 5px 0;
+        }
+        .items-category {
+            margin-top: 25px;
+        }
+        .items-category h3 {
+            color: #8c532b;
+            margin-bottom: 10px;
+        }
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .item-card {
+            flex: 1;
+            background-color: #fffdf9;
+            border: 1px solid #e2d3c1;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+        }
+        .item-card h4 {
+            margin: 0 0 10px 0;
+            color: #6b4226;
+            font-size: 18px;
+        }
+        .item-card .price {
+            font-weight: bold;
+            color: #d9534f;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        form {
+            background-color: #fff8f0;
+            padding: 20px;
+            border: 1px solid #e2d3c1;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, 
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        button[type="submit"] {
+            background-color: #6b4226;
+            color: #ffffff;
+            padding:12px 20px;
+            border:none;
+            border-radius:4px;
+            cursor:pointer;
+            font-size:16px;
+            font-weight:bold;
+        }
+        .contact-box{
+            background-color:#fdfaf6;
+            border-left:5px solid #6b4226;
+            padding:15px;
+            margin-top:15px;
+        }
+        footer {
+            background-color:#4a3b32;
+            color:#ffffff;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+            font-size:14px;
+        }
+        footer a {
+            color:#f3c26b;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand-title">
+            <h1>fast bakes</h1>
+            <p>Freshly Baked Cakes, Cupcakes & Biscuits Daily</p>
+        </div>
+        <nav>
+            <a href="#address">Address</a>
+            <a href="#popular-items">Popular Items</a>
+            <a href="#order-form">Order Online</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="address">
+            <h2>Shop Address</h2>
+            <div class="address-box">
+                <p><strong>Fast Bakes Bakery & Confectionery</strong></p>
+                <p>Plot No. 45, Jubilee Hills Main Road</p>
+                <p>Hyderabad, Telangana - 500033</p>
+                <p><strong>Landmark:</strong> Near Metro Station</p>
+            </div>
+        </div>
+        <div id="popular-items">
+            <h2>Popular Items</h2>
+            <div class="items-category">
+                <h3>Cakes Row</h3>
+                <div class="item-row">
+                    <div class="item-card">
+                        <h4>Chocolate Cake</h4>
+                        <div class="price">₹650</div>
+                    </div>
+                    <div class="item-card">
+                        <h4>Strawberry Cake</h4>
+                        <div class="price">₹550</div>
+                    </div>
+                    <div class="item-card">
+                        <h4>Vanilla Cake</h4>
+                        <div class="price">₹500</div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-category">
+                <h3>Cupcakes Row</h3>
+                <div class="item-row">
+                    <div class="item-card">
+                        <h4>Red Velvet Cupcake</h4>
+                        <div class="price">₹90</div>
+                    </div>
+                    <div class="item-card">
+                        <h4>Blueberry Cupcake</h4>
+                        <div class="price">₹90</div>
+                    </div>
+                    <div class="item-card">
+                        <h4>Salted Caramel Cupcake</h4>
+                        <div class="price">₹80</div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-category">
+                <h3>Biscuits Row</h3>
+                <div class="item-row">
+                    <div class="item-card">
+                        <h4>Butter Biscuits</h4>
+                        <div class="price">₹150</div>
+                    </div>
+                    <div class="item-card">
+                        <h4>Choco-Chip Cookies</h4>
+                        <div class="price">₹180</div>
+                    </div>
+                    <div class="item-card">
+                        <h4>Waffy Biscuits</h4>
+                        <div class="price">₹160</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="order-form">
+            <h2>Place Your Order</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="item-select">Select Item:</label>
+                    <select id="item-select" name="item-select" required>
+                        <option value="">-- Choose an Item --</option>
+                        <option value="chocolate-cake">Chocolate Cake - ₹650</option>
+                        <option value="strawberry-cake">Strawberry Cake - ₹550</option>
+                        <option value="vanilla-cake">Vanilla Cake - ₹500</option>
+                        <option value="red-velvet-cupcake">Red Velvet Cupcake - ₹90</option>
+                        <option value="blueberry-cupcake">Blueberry Cupcake - ₹90</option>
+                        <option value="salted-caramel-cupcake">Salted Caramel Cupcake - ₹80</option>
+                        <option value="butter-biscuits">Butter Biscuits - ₹150</option>
+                        <option value="choco-chip-cookies">Choco-Chip Cookies - ₹180</option>
+                        <option value="oatmeal-biscuits">Oatmeal Raisin Biscuits - ₹160</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="50" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-address">Delivery Address:</label>
+                    <textarea id="delivery-address" name="delivery-address" rows="3" placeholder="Enter your full delivery address" required></textarea>
+                </div>
+                <button type="submit">Place Order Now</button>
+            </form>
+        </div>
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-box">
+                <p><strong>Phone:</strong> +91 1111111111</p>
+                <p><strong>Email:</strong>fastbakes@gmail.com</p>
+                <p><strong>Working Hours:</strong> Monday - Saturday: 7:00 AM - 9:00 PM | Sunday: 8:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 fast bakes. All Rights Reserved.</p>
+        <p>Freshly baked goods delivered right to your doorstep | Contact: <a href="">fastbakes@gmail.com</a></p>
+    </footer>
+</body>
+</html>
